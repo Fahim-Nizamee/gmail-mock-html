@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50">
+    <nav class="flex items-center">
+        <div class="w-1/6  px-5">
+            <div class="flex items-center gap-3 ">
+                <img src="/img/bars.svg" alt="">
+                <img src="/img/Gamil Icon.svg" class="h-full"></img>
+                <div class="cursor-pointer text-2xl font-semibold text-gray-700">Gmail</div>
+            </div>
+        </div>
+        <div class="w-5/6 px-4 pt-4 ">
+            <div class="flex justify-between items-center gap-6 mb-4">
+                <div class="flex items-center bg-indigo-50 p-2  rounded-full w-full">
+                    <div class="rounded-full cursor-pointer flex items-center justify-center hover:bg-gray-200 h-8 w-8">
+                        <img src="/img/searchIcon.svg" alt="">
+                    </div>
+
+                    <input type="text" placeholder="Search mail" class="bg-transparent px-3 w-full outline-none pl-2" />
+                    <div class="rounded-full cursor-pointer flex items-center justify-center hover:bg-gray-200 h-8 w-8">
+                        <img src="/img/searchOption.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-6 h-6 "> <img class="h-full cursor-pointer" src="/img/helpIcon.svg" alt=""></div>
+                    <div class="w-6 h-6 "> <img class="h-full cursor-pointer" src="/img/settingsIcon.svg" alt=""></div>
+                    <div class="w-6 h-6 "> <img class="h-full cursor-pointer" src="/img/menuAppsIcon.svg" alt=""></div>
+                    <div class="w-8 h-8"><img class="h-full cursor-pointer" src="/img/profilePic.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="h-auto flex">
+        <!--Left sidebar -->
+        <div class="w-1/6">
+            <div class="flex flex-col gap-1 ">
+                <div class="px-4 mb-2">
+                    <button class="p-4 bg-[#C3E7FF] rounded-lg flex items-center gap-2"><img class="h-5"
+                            src="/img/compose.svg" alt=""> Compose</button>
+                </div>
+                <div
+                    class="flex items-center justify-between hover:bg-[#D3E3FD] rounded-r-full pl-4 pr-4 mr-2 py-[2px] cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4"><img class="h-full" src="/img/inbox.svg" alt=""></div>
+                        <span class="font-semibold">Inbox</span>
+                    </div>
+                    <div>
+                        14
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-between hover:bg-[#D3E3FD] rounded-r-full pl-4 pr-4 mr-2 py-[2px] cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4"><img class="h-full" src="/img/starred.svg" alt=""></div>
+                        <span>Starred</span>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-between hover:bg-[#D3E3FD] rounded-r-full pl-4 pr-4 mr-2 py-[2px] cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4"><img class="h-full" src="/img/snoozed.svg" alt=""></div>
+                        <span>Snoozed</span>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-between hover:bg-[#D3E3FD] rounded-r-full pl-4 pr-4 mr-2 py-[2px] cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4"><img class="h-full" src="/img/sent.svg" alt=""></div>
+                        <span>Sent</span>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-between hover:bg-[#D3E3FD] rounded-r-full pl-4 pr-4 mr-2 py-[2px] cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4"><img class="h-full" src="/img/drafts.svg" alt=""></div>
+                        <span>Drafts</span>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-between hover:bg-[#D3E3FD] rounded-r-full pl-4 pr-4 mr-2 py-[2px] cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4"><img class="h-full" src="/img/more.svg" alt=""></div>
+                        <span>More</span>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="mt-6 ">
+                    <div class="text-lg font-semibold mb-4 px-4 mr-2 flex justify-between items-center">
+                        <h3>Labels</h3>
+                        <button><img class="h-full" src="/img/plus.svg" alt=""></button>
+
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <div
+                            class="flex items-center gap-2 hover:bg-[#D3E3FD] rounded-r-full pl-4 mr-2 py-[2px] cursor-pointer">
+                            <div class="w-4 h-4"><img class="h-full" src="/img/categories.svg" alt=""></div>
+                            <span>Categories</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 hover:bg-[#D3E3FD] rounded-r-full pl-4 mr-2 py-[2px] cursor-pointer">
+                            <div class="w-4 h-4"><img class="h-full" src="/img/categories.svg" alt=""></div>
+                            <span>Team</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 hover:bg-[#D3E3FD] rounded-r-full pl-4 mr-2 py-[2px] cursor-pointer">
+                            <div class="w-4 h-4"><img class="h-full" src="/img/categories.svg" alt=""></div>
+                            <span>News</span>
+                        </div>
+                        <div class="flex items-center gap-2 hover:bg-[#D3E3FD] rounded-r-full pl-4 mr-2 py-[2px]">
+                            <div class="w-4 h-4"><img class="h-full" src="/img/categories.svg" alt=""></div>
+                            <span>Work</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 hover:bg-[#D3E3FD] rounded-r-full pl-4 mr-2 py-[2px] cursor-pointer">
+                            <div class="w-4 h-4"><img class="h-full" src="/img/categories.svg" alt=""></div>
+                            <span>Personal</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="w-5/6 px-4">
+            <div class="bg-white rounded-lg p-4">
+                <div class="pb-10 flex justify-between">
+                    <div class="flex">
+                        <button class="mr-10">
+                            <img src="/img/long-arrow-left.svg" alt="">
+                        </button>
+                        <div class="flex gap-4">
+                            <button><img src="/img/archive.svg" alt=""></button>
+                            <button><img src="/img/report.svg" alt=""></button>
+                            <button><img src="/img/trash.svg" alt=""></button>
+                            <div class="border h-full"></div>
+                            <button><img src="/img/mark.svg" alt=""></button>
+                            <button><img src="/img/clock.svg" alt=""></button>
+                            <button><img src="/img/done.svg" alt=""></button>
+                            <div class="border h-full"></div>
+                            <button><img src="/img/archiveRemove.svg" alt=""></button>
+                            <button><img src="/img/undo.svg" alt=""></button>
+                            <button><img src="/img/menuDots.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-gray-500 text-sm">
+                            1-16 of 16
+                        </span>
+                        <button><img src="/img/arrowLeft.svg" alt=""></button>
+                        <button><img src="/img/arrowRight.svg" alt=""></button>
+
+                    </div>
+                </div>
+                <div class="mb-2 pl-14 mb-8 flex justify-between ">
+                    <div class="flex gap-2 items-center">
+                        <span class="text-lg text-gray-700 ">Check out my
+                            templates</span>
+                        <span class="rounded text-sm text-gray-500 bg-gray-200 h-5  flex items-center gap-1 px-1">Inbox
+                            <img class="h-2" src="/img/cross.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <button> <img src="/img/print.svg" alt=""></button>
+                        <button> <img src="/img/share.svg" alt=""></button>
+
+                    </div>
+
+                </div>
+                <div class="flex  justify-between mb-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full"> <img class="h-full" src="/img/profilePic.svg"
+                                alt=""></div>
+                        <div>
+                            <div class="flex items-center">
+                                <div class="font-bold text-lg">Scarlytemplates</div>
+                                <div class="text-sm text-gray-500">&lt;randomdesign@gmail.com&gt;</div>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <span>to me</span> <img src="/img/dropdownArrow.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-500 flex items-start gap-4">
+                        <span>
+                            June 25, 2018, 3:26 PM
+                        </span>
+                        <div class="flex gap-4 pt-[3px]">
+                            <button>
+                                <img src="/img/starred.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="/img/reply.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="/img/more.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" pl-14">
+                    <div class="text-gray-700 mb-4 w-72">Hi, are you liking this template? Then try out my new template
+                        for
+                        mobile Gmail!</div>
+                    <div class="mb-4 text-gray-700 ">Click link here &gt;&gt;&gt; <a class="hover:text-blue-600"
+                            href="https://www.figma.com/community/file/984761507298963796">https://www.figma.com/community/file/984761507298963796</a>
+                    </div>
+                    <img src="/img/templateImage.svg" alt="Template Image" class=" rounded-lg mb-4" />
+                    <div class="flex gap-4">
+                        <button class="px-4 py-2 border hover:bg-gray-200 rounded-full flex items-center gap-2"><img
+                                src="/img/reply.svg" alt=""> Reply</button>
+                        <button class="px-4 py-2 border hover:bg-gray-200 rounded-full flex items-center gap-2"><img
+                                src="/img/forward.svg" alt="">Forward</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Right sidebar -->
+        <div class="pr-5 pt-4 flex flex-col items-center gap-6">
+            <div class="w-4 h-4 cursor-pointer">
+                <img class="h-full" src="/img/calendarIcon.svg" alt="">
+            </div>
+            <div class="w-4 h-4 cursor-pointer">
+                <img class="h-full" src="/img/noteTakerIocn.svg" alt="">
+            </div>
+            <div class="w-4 h-4 cursor-pointer">
+                <img class="h-full" src="/img/contactIcon.svg" alt="">
+            </div>
+            <hr class="border w-full">
+            <div class="w-4 h-4 cursor-pointer">
+                <img class="h-full" src="/img/plus.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
